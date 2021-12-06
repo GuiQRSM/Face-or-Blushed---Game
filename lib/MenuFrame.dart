@@ -24,16 +24,19 @@ class _MenuFrameState extends State<MenuFrame> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(top: 150),
+                padding: EdgeInsets.only(top: 140),
               child: Image.asset(
                 "pics/face_or_blushed_01.png",
               ),
               ),
               Padding(
                   padding: EdgeInsets.only(top: 18),
-                child: Image.asset(
+                child: GestureDetector(
+                  onTap: ,
+                  child: Image.asset(
                     "pics/botton_f_o_b.png",
-                ),
+                  ),
+                )
               ),
             ],
           ),
