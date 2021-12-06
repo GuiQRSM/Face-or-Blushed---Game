@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MenuFrame extends StatefulWidget {
@@ -7,7 +8,7 @@ class MenuFrame extends StatefulWidget {
   _MenuFrameState createState() => _MenuFrameState();
 }
 
-var pickColor = Color.fromARGB(50, 153, 102, 51);
+var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _MenuFrameState extends State<MenuFrame> {
   @override
@@ -20,7 +21,12 @@ class _MenuFrameState extends State<MenuFrame> {
           padding: EdgeInsets.all(32),
           child: Column(
             children: <Widget>[
-
+              Padding(
+                padding: EdgeInsets.only(top: 18),
+              child: Image.asset(
+                "pics/face_or_blushed_01.png",
+              height: 100,),
+              ),
             ],
           ),
         ),
