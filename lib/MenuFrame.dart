@@ -25,7 +25,13 @@ class _MenuFrameState extends State<MenuFrame> {
                 padding: EdgeInsets.only(top: 18),
               child: Image.asset(
                 "pics/face_or_blushed_01.png",
-              height: 100,),
+              height: 150,),
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 18),
+                child: Image.asset(
+                    "pics/botton_f_o_b.png",
+                height: 100,),
               ),
             ],
           ),
