@@ -1,3 +1,4 @@
+import 'package:cara_ou_coroa/FaceFrame.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,7 +6,7 @@ void main() {
   runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        //home: ,
+        home: FaceFrame(),
       )
   );
 
