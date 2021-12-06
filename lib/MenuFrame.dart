@@ -7,6 +7,8 @@ class MenuFrame extends StatefulWidget {
   _MenuFrameState createState() => _MenuFrameState();
 }
 
+var pickColor = Color.fromARGB(100, 153, 102, 51);
+
 class _MenuFrameState extends State<MenuFrame> {
   @override
   Widget build(BuildContext context) {
