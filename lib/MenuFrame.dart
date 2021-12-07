@@ -15,6 +15,9 @@ var pickColor = Color.fromARGB(255, 153, 102, 51);
 class _MenuFrameState extends State<MenuFrame> {
 
  var listNamed = ["face", "blushed"];
+var _receiver = "";
+
+
 
   void _bringFrame (){
 
