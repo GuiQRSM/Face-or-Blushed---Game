@@ -14,7 +14,8 @@ var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _MenuFrameState extends State<MenuFrame> {
 
- var listNamed = ["face", "blushed"];
+
+
 
 void _randomChain (){
 
@@ -23,13 +24,27 @@ void _randomChain (){
 
   switch (receiver){
     case "face" :
-      AssetImage("pics/chain_face.png");
+     setState(() {
+       AssetImage("pics/chain_face.png");
+     });
       break;
 
     case "blushed" :
-      AssetImage("pics/chain_blushed.png");
+      setState(() {
+        AssetImage("pics/chain_blushed.png");
+      });
       break;
+
   }
+
+  if(receiver == "face") {
+    setState(() {
+      this._imageDinamic = Image.asset("pics/chain_face.png") as AssetImage;
+    });
+  }else if(receiver == "blushed"){
+    this._imageDinamic = Image.asset("pics/chain_blushed.png") as AssetImage;
+  }
+
 }
 
 
@@ -38,7 +53,7 @@ void _randomChain (){
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => FaceFrame(bringRandon: '$_randomChain()',),
+            builder: (context) => FaceFrame("$_randomChain()"),
         ),
     );
 

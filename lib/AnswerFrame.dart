@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class FaceFrame extends StatefulWidget {
 
   String bringRandon;
-  FaceFrame({required this.bringRandon});
+  FaceFrame(this.bringRandon);
 
   @override
   _FaceFrameState createState() => _FaceFrameState();
@@ -27,7 +27,7 @@ class _FaceFrameState extends State<FaceFrame> {
               Padding(
                   padding: EdgeInsets.only(top: 90),
                 child: Image.asset(
-                    "pics/chain_face.png",
+                    "${widget.bringRandon}",
                 ),
               ),
               Padding(
