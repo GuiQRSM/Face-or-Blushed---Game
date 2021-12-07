@@ -17,6 +17,7 @@ class _MenuFrameState extends State<MenuFrame> {
   void _bringFrame (){
 
     var listNamed = ["face", "blushed"];
+    var numberRandom = Random().nextInt(listNamed.length);
 
     Navigator.push(
         context,
