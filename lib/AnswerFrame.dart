@@ -2,7 +2,9 @@ import 'package:cara_ou_coroa/MenuFrame.dart';
 import 'package:flutter/material.dart';
 
 class FaceFrame extends StatefulWidget {
-  const FaceFrame({Key? key}) : super(key: key);
+
+  int bringRandon;
+  FaceFrame({required this.bringRandon});
 
   @override
   _FaceFrameState createState() => _FaceFrameState();
@@ -11,17 +13,6 @@ class FaceFrame extends StatefulWidget {
 var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _FaceFrameState extends State<FaceFrame> {
-
-  /*void _callMenuFrame (){
-
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => MenuFrame(),
-        ),
-    );
-
-  }*/
 
   @override
   Widget build(BuildContext context) {

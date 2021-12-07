@@ -18,7 +18,7 @@ class _MenuFrameState extends State<MenuFrame> {
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => FaceFrame(),
+            builder: (context) => FaceFrame(bringRandon: 0,),
         ),
     );
 
