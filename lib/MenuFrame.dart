@@ -1,6 +1,7 @@
 import 'package:cara_ou_coroa/AnswerFrame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class MenuFrame extends StatefulWidget {
   const MenuFrame({Key? key}) : super(key: key);
@@ -13,12 +14,14 @@ var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _MenuFrameState extends State<MenuFrame> {
 
+ var listNamed = ["face", "blushed"];
+
   void _bringFrame (){
 
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => FaceFrame(bringRandon: 0,),
+            builder: (context) => FaceFrame(bringRandon: '',),
         ),
     );
 

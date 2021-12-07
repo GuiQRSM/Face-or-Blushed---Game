@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class FaceFrame extends StatefulWidget {
 
-  int bringRandon;
+  String bringRandon;
   FaceFrame({required this.bringRandon});
 
   @override
