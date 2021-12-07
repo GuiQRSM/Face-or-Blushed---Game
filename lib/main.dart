@@ -1,4 +1,4 @@
-import 'package:cara_ou_coroa/FaceFrame.dart';
+import 'package:cara_ou_coroa/AnswerFrame.dart';
 import 'package:cara_ou_coroa/MenuFrame.dart';
 import 'package:flutter/material.dart';
 
