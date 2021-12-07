@@ -20,7 +20,12 @@ class _FaceFrameState extends State<FaceFrame> {
           padding: EdgeInsets.all(32),
           child: Column(
             children: <Widget>[
-
+              Padding(
+                  padding: EdgeInsets.only(top: 90),
+                child: Image.asset(
+                    "pics/chain_face.png",
+                ),
+              ),
             ],
           ),
         ),
