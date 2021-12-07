@@ -1,3 +1,4 @@
+import 'package:cara_ou_coroa/AnswerFrame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,14 @@ var pickColor = Color.fromARGB(255, 153, 102, 51);
 class _MenuFrameState extends State<MenuFrame> {
 
   void _bringFrame (){
-    print("Trás a tela!");
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => FaceFrame(),
+        ),
+    );
+
   }
 
   @override
