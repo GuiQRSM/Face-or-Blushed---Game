@@ -18,6 +18,7 @@ class _MenuFrameState extends State<MenuFrame> {
 
     var listNamed = ["face", "blushed"];
     var numberRandom = Random().nextInt(listNamed.length);
+    var randomChain = listNamed[numberRandom];
 
     Navigator.push(
         context,
