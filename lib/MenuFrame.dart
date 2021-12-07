@@ -14,14 +14,14 @@ var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _MenuFrameState extends State<MenuFrame> {
 
-
-
   void _bringFrame (){
+
+    var listNamed = ["face", "blushed"];
 
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => FaceFrame("$_randomChain()"),
+            builder: (context) => FaceFrame("cara"),
         ),
     );
 
