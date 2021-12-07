@@ -18,6 +18,11 @@ class _FaceFrameState extends State<FaceFrame> {
   Widget build(BuildContext context) {
 
     var imageway;
+    if(widget.bringRandon == "face"){
+      imageway = "pics/chain_face.png";
+    }else{
+      imageway = "pics/chain_blushed.png";
+    }
 
     return Scaffold(
       backgroundColor: pickColor,
