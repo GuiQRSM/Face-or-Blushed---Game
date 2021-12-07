@@ -26,6 +26,15 @@ class _FaceFrameState extends State<FaceFrame> {
                     "pics/chain_face.png",
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(top: 18),
+                child: GestureDetector(
+                  onTap: (){},
+                  child:  Image.asset(
+                    "pics/botton_f_o_b_02.png",
+                  ),
+                ),
+              ),
             ],
           ),
         ),
