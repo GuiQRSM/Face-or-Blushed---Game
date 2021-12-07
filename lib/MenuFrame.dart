@@ -38,7 +38,7 @@ void _randomChain (){
     Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => FaceFrame(bringRandon: '',),
+            builder: (context) => FaceFrame(bringRandon: '$_randomChain()',),
         ),
     );
 
