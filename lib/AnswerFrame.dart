@@ -16,6 +16,9 @@ class _FaceFrameState extends State<FaceFrame> {
 
   @override
   Widget build(BuildContext context) {
+
+    var imageway;
+
     return Scaffold(
       backgroundColor: pickColor,
       body: Container(
@@ -27,7 +30,7 @@ class _FaceFrameState extends State<FaceFrame> {
               Padding(
                   padding: EdgeInsets.only(top: 90),
                 child: Image.asset(
-                    "pics/chain_face.png",
+                    "",
                 ),
               ),
               Padding(
