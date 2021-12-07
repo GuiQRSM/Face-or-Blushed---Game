@@ -16,38 +16,6 @@ class _MenuFrameState extends State<MenuFrame> {
 
 
 
-
-void _randomChain (){
-
-  var numberRandom = Random().nextInt(listNamed.length);
-  var receiver = listNamed[numberRandom];
-
-  switch (receiver){
-    case "face" :
-     setState(() {
-       AssetImage("pics/chain_face.png");
-     });
-      break;
-
-    case "blushed" :
-      setState(() {
-        AssetImage("pics/chain_blushed.png");
-      });
-      break;
-
-  }
-
-  if(receiver == "face") {
-    setState(() {
-      this._imageDinamic = Image.asset("pics/chain_face.png") as AssetImage;
-    });
-  }else if(receiver == "blushed"){
-    this._imageDinamic = Image.asset("pics/chain_blushed.png") as AssetImage;
-  }
-
-}
-
-
   void _bringFrame (){
 
     Navigator.push(
