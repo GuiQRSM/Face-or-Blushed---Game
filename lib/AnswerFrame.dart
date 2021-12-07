@@ -14,6 +14,17 @@ class _FaceFrameState extends State<FaceFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: pickColor,
+      body: Container(
+        width: double.infinity,
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(32),
+          child: Column(
+            children: <Widget>[
+
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
