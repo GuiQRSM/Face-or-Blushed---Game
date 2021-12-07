@@ -35,7 +35,7 @@ class _FaceFrameState extends State<FaceFrame> {
               Padding(
                   padding: EdgeInsets.only(top: 90),
                 child: Image.asset(
-                    "",
+                    imageway
                 ),
               ),
               Padding(
