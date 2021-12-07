@@ -12,7 +12,7 @@ var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _FaceFrameState extends State<FaceFrame> {
 
-  void _callMenuFrame (){
+  /*void _callMenuFrame (){
 
     Navigator.push(
         context,
@@ -21,7 +21,7 @@ class _FaceFrameState extends State<FaceFrame> {
         ),
     );
 
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,9 @@ class _FaceFrameState extends State<FaceFrame> {
               Padding(
                 padding: EdgeInsets.only(top: 18),
                 child: GestureDetector(
-                  onTap: _callMenuFrame,
+                  onTap: (){
+                    Navigator.pop(context);
+                  },
                   child:  Image.asset(
                     "pics/botton_f_o_b_02.png",
                   ),
