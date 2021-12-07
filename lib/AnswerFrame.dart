@@ -7,11 +7,13 @@ class FaceFrame extends StatefulWidget {
   _FaceFrameState createState() => _FaceFrameState();
 }
 
-var pickColor = Color.fromARGB(100, 153, 102, 51);
+var pickColor = Color.fromARGB(255, 153, 102, 51);
 
 class _FaceFrameState extends State<FaceFrame> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: pickColor,
+    );
   }
 }
